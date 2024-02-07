@@ -25,3 +25,7 @@
 span {
   font-size: 50px;
 }
+
+::-webkit-scrollbar{
+  overflow: hidden;
+}

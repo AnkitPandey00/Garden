@@ -3,6 +3,9 @@ import { Link, Route, Routes } from "react-router-dom";
 import Home from "../home/Home";
 import Login from "../login/Login";
 import SignUp from "../singup/SignUp";
+import PageNavigation from "../PagesNavigation/PageNavigation";
+import PlantDetailsIndoor from "../PlantDetails/PlantDetailsIndoor";
+import PlantDetailsOutdoor from "../PlantDetails/PlantDetailsOutdoor";
 import "./Nav.css";
 const Nav = () => {
   return (
@@ -14,9 +17,24 @@ const Nav = () => {
         <Link to="/" element={<Home />} className="nav2">
           Home
         </Link>
+        <Link
+          to="/plantdetailsindoor"
+          element={<PlantDetailsIndoor />}
+          className="nav2"
+        >
+          Indoor_Plant
+        </Link>
+        <Link
+          to="/plantdetailsoutdoor"
+          element={<PlantDetailsOutdoor />}
+          className="nav2"
+        >
+          Outdoor_Plant
+        </Link>
         <Link to="/login" element={<Login />} className="nav2">
           Login
         </Link>
+
         <Link to="/signup" element={<SignUp />} className="nav2">
           Signup
         </Link>
@@ -25,9 +43,11 @@ const Nav = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/pagenavigation/:id" element={<PageNavigation />} />
+        <Route path="/plantdetailsindoor" element={<PlantDetailsIndoor />} />
+        <Route path="plantdetailsoutdoor" element={<PlantDetailsOutdoor />} />
       </Routes>
     </div>
   );
 };
-
 export default Nav;
