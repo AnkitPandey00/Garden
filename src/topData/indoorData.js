@@ -113,7 +113,7 @@ const Data = [
           "toxicity": "Toxic if ingested, can cause irritation and swelling of the mouth and throat",
           "pestsAndDiseases": "Resistant to pests, but may suffer from leaf spots if overwatered"
         },
-        "Image":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU',
+        "Image":'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU4MHX6lxNq29lA3k9CaGhFLqI3RC7Cpnl3xPDZgyxJv6Sftx4',
       },
     
 ];

@@ -6,7 +6,7 @@ const PageNavigation = () => {
     const plantData = location.state?.plant; // Added optional chaining to prevent errors if state is undefined
     return (
         <div>
-           <h1>{plantData.Title}</h1>
+           <h1>{plantData.commonName}</h1>
         </div>
     )
 }

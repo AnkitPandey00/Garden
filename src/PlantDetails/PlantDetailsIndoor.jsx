@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Data from '../topData/Data'
+import Data from '../topData/indoorData'
 import { useNavigate } from 'react-router-dom';
 
 const PlantDetailsIndoor = () => {
@@ -17,7 +17,7 @@ const PlantDetailsIndoor = () => {
           <>
             <div className="toSection">
               <div className="left">
-               <img src={ele.Image}></img>
+              <img src={ele.Image} alt=""></img>
               </div>
               <div className="right">
                 <h1>Title: {ele.Title}</h1>
