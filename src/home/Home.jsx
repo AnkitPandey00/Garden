@@ -42,7 +42,7 @@ const Home = () => {
               return (
                 <div className="top_plant_card">
                   <div className="top_plant_img">
-                    <img src={ele.Image} alt="" className="img_01"></img>
+                    <img src={ele.images} alt="" className="img_01"></img>
                   </div>
                   <div className="top_plant_card_01">
                     <p className="top_plant_title">{ele.commonName}</p>

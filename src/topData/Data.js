@@ -20,7 +20,7 @@ const Data = [
           "toxicity": "Mildly toxic if ingested, can cause irritation",
           "pestsAndDiseases": "Resistant to pests but susceptible to root rot if overwatered"
         },
-        "Image":'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPH4_GB7iG_h61yON_K8RZ8XVSda731WEnzgEf84PIIzkZDD6_',
+        "images":'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPH4_GB7iG_h61yON_K8RZ8XVSda731WEnzgEf84PIIzkZDD6_',
         "type": "Indoor",
         
       },
@@ -45,7 +45,7 @@ const Data = [
           "pestsAndDiseases": "Susceptible to aphids, spider mites, and powdery mildew"
         },
         "type": "Indoor",
-        "Image":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NoQXSViS0UfXpbGScTRekcWP0jbkXmkCK2ljNEiLpPTrf0SyeobkQ3IAOk-pWgm_ZDA&usqp=CAU',
+        "images":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NoQXSViS0UfXpbGScTRekcWP0jbkXmkCK2ljNEiLpPTrf0SyeobkQ3IAOk-pWgm_ZDA&usqp=CAU',
       },
       {
         id: 2,
@@ -68,7 +68,7 @@ const Data = [
           "pestsAndDiseases": "May be susceptible to aphids, scale insects, and fungal diseases if not properly cared for"
         },
         "type": "Indoor",
-        "Image":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllKzu2rsSpbOIZdGwZvvRgezqtVCVsLBj1xBlJCmy0qjII8Nj',
+        "images":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllKzu2rsSpbOIZdGwZvvRgezqtVCVsLBj1xBlJCmy0qjII8Nj',
       },
       {
         id: 3,
@@ -91,7 +91,7 @@ const Data = [
           "pestsAndDiseases": "Resistant to pests, but may suffer from root rot if overwatered"
         },
         "type": "Indoor",
-        "Image":'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8KleJ1SPIUMO-XPblXPVFbOkC_nxZZm8BaP9pezOG3-Q99q2o',
+        "images":'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8KleJ1SPIUMO-XPblXPVFbOkC_nxZZm8BaP9pezOG3-Q99q2o',
       },
       {
         id: 4,
@@ -113,7 +113,7 @@ const Data = [
           "toxicity": "Toxic if ingested, can cause irritation and swelling of the mouth and throat",
           "pestsAndDiseases": "Resistant to pests, but may suffer from leaf spots if overwatered"
         },
-        "Image":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU',
+        "images":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU',
       },
     
 ];
