@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "../home/Home";
-import Login from "../login/Login";
+//import Login from "../login/Login";
 import SignUp from "../SignUp/SignUp";
 import PageNavigation from "../PagesNavigation/PageNavigation";
 import PlantDetailsIndoor from "../PlantDetails/PlantDetailsIndoor";
 import PlantDetailsOutdoor from "../PlantDetails/PlantDetailsOutdoor";
 import AskQuestion from "../askQuestion/AskQuestion";
+import Community from "../community/Community";
 import "./Nav.css";
 const Nav = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,8 +39,11 @@ const Nav = () => {
         <Link to="/askquestion" element={<AskQuestion />} className="nav2">
           Ask_Question
         </Link>
-        <Link to="/login" element={<Login />} className="nav2">
+        {/* <Link to="/login" element={<Login />} className="nav2">
           Login
+        </Link> */}
+        <Link to="/community" element={<Community />} className="nav2">
+          Community
         </Link>
         <Link to="/signup" element={<SignUp />} className="nav2">
           Signup
@@ -47,12 +51,13 @@ const Nav = () => {
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+      {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/signup" element={<SignUp />} />
         <Route path="/pagenavigation/:id" element={<PageNavigation />} />
         <Route path="/plantdetailsindoor" element={<PlantDetailsIndoor />} />
-        <Route path="plantdetailsoutdoor" element={<PlantDetailsOutdoor />} />
-        <Route path="askquestion" element={<AskQuestion/>} />
+        <Route path="/plantdetailsoutdoor" element={<PlantDetailsOutdoor />} />
+        <Route path="/askquestion" element={<AskQuestion/>} />
+        <Route path="/community" element={<Community/>}/>
       </Routes>
     </div>
   );
