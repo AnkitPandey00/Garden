@@ -230,6 +230,190 @@ const Data = [
         "type": "Outdoor",
         "images": "https://cdn.britannica.com/24/235424-050-9E128DEB/Snapdragon-flowers-plant.jpg"
         },
+        {
+          id: 10,
+          "commonName": "Chinese Evergreen",
+          "scientificName": "Aglaonema",
+          "description": "Chinese Evergreen is a popular indoor plant valued for its attractive foliage and air-purifying qualities. It comes in various cultivars with different leaf patterns and colors, making it a versatile choice for indoor decor.",
+          "careRequirements": {
+            "light": "Tolerates low to medium indirect light, but prefers indirect light",
+            "watering": "Allow soil to dry out slightly between waterings, as overwatering can cause root rot",
+            "temperature": "Prefers temperatures between 65-75°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Well-draining potting mix",
+            "fertilization": "Feed with a balanced liquid fertilizer every 4-6 weeks during the growing season",
+            "pruning": "Trim yellowing leaves as needed",
+            "propagation": "Propagate through division of root ball or stem cuttings",
+            "growingZones": "Suitable for indoor cultivation, not cold-hardy outdoors",
+            "nativeHabitat": "Native to tropical regions of Asia",
+            "uses": "Popular as an indoor decorative plant",
+            "toxicity": "Mildly toxic if ingested, can cause irritation",
+            "pestsAndDiseases": "Resistant to pests, but may suffer from root rot if overwatered"
+          },
+          "type": "Indoor",
+          "images": "https://cdn.mos.cms.futurecdn.net/opVxtLDKnSymCc3JruP8GK.jpg"
+        },
+        {
+          id: 11,
+          "commonName": "Aloe Vera",
+          "scientificName": "Aloe vera",
+          "description": "Aloe Vera is a succulent plant valued for its medicinal properties and attractive foliage. It is known for its soothing gel, which is commonly used to treat minor burns and skin irritations.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Allow soil to dry out between waterings, as overwatering can cause root rot",
+            "temperature": "Thrives in temperatures between 60-75°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining cactus or succulent potting mix",
+            "fertilization": "Feed sparingly with a balanced liquid fertilizer during the growing season",
+            "pruning": "Remove spent flower stalks and dead leaves",
+            "propagation": "Propagate from offsets or leaf cuttings",
+            "growingZones": "Suitable for indoor cultivation, not cold-hardy outdoors",
+            "nativeHabitat": "Native to the Arabian Peninsula",
+            "uses": "Valued for its medicinal properties and as an ornamental plant",
+            "toxicity": "Mildly toxic if ingested, can cause stomach discomfort",
+            "pestsAndDiseases": "Resistant to pests, but may suffer from root rot if overwatered"
+          },
+          "type": "Indoor",
+          "images":"https://media.post.rvohealth.io/wp-content/uploads/2020/09/aloe-vera-732x549-thumbnail.jpg"
+        },
+        {
+          id: 12,
+          "commonName": "Jade Plant",
+          "scientificName": "Crassula ovata",
+          "description": "The Jade Plant, also known as the Money Plant or Friendship Tree, is a popular succulent valued for its attractive and resilient nature. It is believed to bring good luck and prosperity.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Allow soil to dry out between waterings, as overwatering can cause root rot",
+            "temperature": "Thrives in temperatures between 65-75°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining cactus or succulent potting mix",
+            "fertilization": "Feed with a balanced liquid fertilizer monthly during the growing season",
+            "pruning": "Pinch back stem tips to encourage bushiness",
+            "propagation": "Propagate from stem or leaf cuttings",
+            "growingZones": "Suitable for indoor cultivation, not cold-hardy outdoors",
+            "nativeHabitat": "Native to South Africa",
+            "uses": "Popular as a houseplant and for bonsai cultivation",
+            "toxicity": "Mildly toxic if ingested, can cause stomach discomfort",
+            "pestsAndDiseases": "Resistant to pests, but may suffer from root rot if overwatered"
+          },
+          "type": "Indoor",
+          "images": "https://m.media-amazon.com/images/I/51fehIGF48L._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+          id: 13,
+          "commonName": "Begonia",
+          "scientificName": "Begonia",
+          "description": "Begonias are a diverse group of flowering plants valued for their colorful flowers and attractive foliage. They come in various forms, including tuberous, fibrous, and rhizomatous, and are popular as both indoor and outdoor plants.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Keep soil consistently moist, but not waterlogged",
+            "temperature": "Prefers temperatures between 65-75°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining potting mix rich in organic matter",
+            "fertilization": "Feed with a balanced liquid fertilizer every 4-6 weeks during the growing season",
+            "pruning": "Remove spent flowers and yellowing leaves",
+            "propagation": "Propagate from stem cuttings or leaf cuttings",
+            "growingZones": "Depends on the species and variety, but many are suited for indoor cultivation",
+            "nativeHabitat": "Native to tropical and subtropical regions worldwide",
+            "uses": "Popular as ornamental plants in gardens and indoor spaces",
+            "toxicity": "Mildly toxic if ingested, can cause stomach discomfort",
+            "pestsAndDiseases": "Susceptible to powdery mildew, aphids, and spider mites"
+          },
+          "type": "Indoor/Outdoor",
+          "images": "https://naturerabbit.in/wp-content/uploads/2018/11/Nature-Rabbit-Begonia-Red-Plant-1.jpg"
+        },
+        {
+          id: 14,
+          "commonName": "Kalanchoe",
+          "scientificName": "Kalanchoe",
+          "description": "Kalanchoes are succulent plants valued for their colorful flowers and thick, fleshy leaves. They are popular as indoor and outdoor plants, especially during the winter months when they produce vibrant blooms.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Allow soil to dry out slightly between waterings, as overwatering can cause root rot",
+            "temperature": "Thrives in temperatures between 60-85°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining cactus or succulent potting mix",
+            "fertilization": "Feed with a balanced liquid fertilizer monthly during the growing season",
+            "pruning": "Remove spent flowers and dead leaves",
+            "propagation": "Propagate from stem cuttings or leaf cuttings",
+            "growingZones": "Depends on the species and variety, but many are suitable for indoor cultivation",
+            "nativeHabitat": "Native to Madagascar and tropical Africa",
+            "uses": "Commonly grown indoors as a decorative plant",
+            "toxicity": "Mildly toxic if ingested, can cause stomach discomfort",
+            "pestsAndDiseases": "Resistant to pests, but may suffer from root rot if overwatered"
+          },
+          "type": "Indoor/Outdoor",
+          "images": "https://rukminim2.flixcart.com/image/850/1000/kwv0djk0/plant-sapling/u/t/f/yes-annual-yes-kalanchoe-plant-indian-flower-1-pagoda-point-original-imag9gdafaytz7gf.jpeg?q=90&crop=false"
+        },
+        {
+          id: 15,
+          "commonName": "Bromeliad",
+          "scientificName": "Bromeliaceae",
+          "description": "Bromeliads are a diverse family of tropical plants valued for their vibrant and long-lasting flowers, as well as their striking foliage. They are popular as indoor and outdoor ornamental plants and are relatively easy to care for.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Keep the central cup filled with water and mist the leaves regularly, avoid overwatering the soil",
+            "temperature": "Thrives in temperatures between 65-80°F",
+            "humidity": "Requires high humidity levels",
+            "soil": "Use a well-draining potting mix formulated for epiphytic plants",
+            "fertilization": "Feed with a diluted liquid fertilizer monthly during the growing season",
+            "pruning": "Trim dead leaves and spent flowers as needed",
+            "propagation": "Propagate from offsets produced by the mother plant",
+            "growingZones": "Depends on the species and variety, but many are suitable for indoor cultivation",
+            "nativeHabitat": "Native to tropical regions of the Americas",
+            "uses": "Popular as indoor and outdoor ornamental plants",
+            "toxicity": "Non-toxic to humans and pets",
+            "pestsAndDiseases": "Generally pest-resistant, but may suffer from fungal diseases if overwatered"
+          },
+          "type": "Indoor/Outdoor",
+          "images": "https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1635386596/vendor/2864/catalog/product/2/0/20210824113629_file_6125827d60dad_612582ef2afae._6179a27159724.jpg"
+        },
+        {
+          id: 16,
+          "commonName": "Gerbera Daisy",
+          "scientificName": "Gerbera jamesonii",
+          "description": "Gerbera Daisies are cheerful and colorful flowering plants valued for their large, daisy-like flowers that come in various vibrant hues. They are popular as indoor and outdoor plants and are commonly used in floral arrangements.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Keep soil evenly moist, but not waterlogged",
+            "temperature": "Prefers temperatures between 65-75°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining potting mix rich in organic matter",
+            "fertilization": "Feed with a balanced liquid fertilizer every 4-6 weeks during the growing season",
+            "pruning": "Remove spent flowers and yellowing leaves",
+            "propagation": "Propagate from seed or by dividing the clumps",
+            "growingZones": "Suitable for outdoor cultivation in USDA Zones 8-11, can be grown indoors",
+            "nativeHabitat": "Native to South Africa",
+            "uses": "Popular as ornamental plants in gardens and floral arrangements",
+            "toxicity": "Non-toxic to humans and pets",
+            "pestsAndDiseases": "Susceptible to aphids, spider mites, and powdery mildew"
+          },
+          "type": "Indoor/Outdoor",
+          "images": "https://nurserylive.com/cdn/shop/products/nurserylive-plants-gerbera-red-plant-16968877113484.jpg?v=1634220246"
+        },
+        {
+          id: 17,
+          "commonName": "Cyclamen",
+          "scientificName": "Cyclamen",
+          "description": "Cyclamen is a charming flowering plant known for its uniquely shaped flowers and marbledfoliage. It blooms in the winter months and is popular as an indoor plant for adding color to homes during the colder seasons.",
+          "careRequirements": {
+            "light": "Prefers bright, indirect light",
+            "watering": "Water thoroughly when the top inch of soil feels dry, avoid getting water on the crown of the plant",
+            "temperature": "Prefers cool temperatures between 50-65°F",
+            "humidity": "Tolerates average indoor humidity levels",
+            "soil": "Use a well-draining potting mix",
+            "fertilization": "Feed with a balanced liquid fertilizer every 4-6 weeks during the growing season",
+            "pruning": "Remove spent flowers and yellowing leaves",
+            "propagation": "Propagate from seed or by dividing the tubers",
+            "growingZones": "Suitable for indoor cultivation, not cold-hardy outdoors",
+            "nativeHabitat": "Native to the Mediterranean region",
+            "uses": "Popular as an indoor decorative plant, especially during the winter months",
+            "toxicity": "Toxic if ingested, can cause stomach discomfort",
+            "pestsAndDiseases": "Susceptible to aphids, spider mites, and gray mold"
+          },
+          "type": "Indoor",
+          "images":"https://imengine.public.prod.dur.navigacloud.com/?uuid=495f6b8c-03d2-5c14-be36-85ffb72df1ef&function=original&type=preview"
+        }
    
 
 ];

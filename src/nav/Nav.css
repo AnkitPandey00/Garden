@@ -1,31 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-.conatiner {
-  width: 100%;
-}
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
-  height: 70px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    box-shadow: 2px 2px 2px 1px rgb(190, 198, 192);
-}
-.nav2 {
-  color: rgb(13, 14, 13);
-  text-decoration: none;
-}
-.nav2:hover {
-  color: green;
-}
-span {
-  font-size: 50px;
-}
-
-::-webkit-scrollbar{
-  overflow: hidden;
+.active {
+  font-weight: 700;
+  border-bottom: 3px solid #057d03;
 }

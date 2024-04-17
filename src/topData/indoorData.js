@@ -116,7 +116,7 @@ const Data = [
         "images":'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU4MHX6lxNq29lA3k9CaGhFLqI3RC7Cpnl3xPDZgyxJv6Sftx4',
       },
       {
-        "id": "6",
+        id:5,
         "commonName": "Boston Fern",
         "scientificName": "Nephrolepis exaltata",
         "description": "The Boston Fern is a classic and popular indoor plant known for its lush, feathery fronds that cascade gracefully from hanging baskets or pots. It thrives in humid environments and adds a touch of greenery to indoor spaces.",
@@ -139,7 +139,7 @@ const Data = [
         "images": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1539018609/products/boston-fern-8f6ed2.psd"
       },
       {
-        "id": "7",
+        id: 6,
         "commonName": "Christmas Cactus",
         "scientificName": "Schlumbergera",
         "description": "The Christmas Cactus is a popular holiday plant known for its colorful flowers that bloom around Christmas time. It is a type of succulent that requires minimal care and can thrive indoors.",
@@ -162,7 +162,7 @@ const Data = [
         "images": "https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-christmas-cactus-schlumbergera-succulent-plant-1-723302_300x@2x.jpg?v=1679749533"
       },
       {
-        "id": "8",
+        id: 7,
         "commonName": "Anthurium",
         "scientificName": "Anthurium andraeanum",
         "description": "Anthuriums, also known as Flamingo Flowers or Laceleaf, are tropical plants prized for their stunning, brightly colored flowers and glossy foliage. They are popular as indoor plants and are relatively easy to care for.",
@@ -185,7 +185,7 @@ const Data = [
         "images": "https://cdn.shopify.com/s/files/1/0013/3529/6118/files/Anthurium-x-Utah-Detail.jpg?1000"
       },
       {
-        "id": "9",
+        id: 8,
         "commonName": "ZZ Plant",
         "scientificName": "Zamioculcas zamiifolia",
         "description": "The ZZ Plant is a low-maintenance and drought-tolerant indoor plant characterized by its glossy, dark green leaves. It is highly adaptable to a variety of indoor conditions and is an excellent choice for beginner gardeners.",
@@ -208,7 +208,7 @@ const Data = [
         "images": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1684789715-the_sill-variant-white_gloss-zz_plant.jpg?crop=1xw:0.966xh;center,top&resize=980:*"
       },
       {
-        "id": "10",
+        id: 9,
         "commonName": "Pothos",
         "scientificName": "Epipremnum aureum",
         "description": "Pothos, also known as Devil's Ivy, is a popular indoor vine valued for its attractive heart-shaped leaves and easy care requirements. It is versatile and can be grown in various conditions, making it a favorite for indoor spaces.",
@@ -231,7 +231,7 @@ const Data = [
         "images":"https://budsnblush.com/cdn/shop/products/SilverSatinPothosBigLeaves_ScindapsusPictus_AirPurifyingPlants.jpg?v=1660209053"
       },
       {
-        "id": "11",
+        id: 10,
         "commonName": "Chinese Evergreen",
         "scientificName": "Aglaonema",
         "description": "Chinese Evergreen is a popular indoor plant valued for its attractive foliage and air-purifying qualities. It comes in various cultivars with different leaf patterns and colors, making it a versatile choice for indoor decor.",
@@ -254,7 +254,7 @@ const Data = [
         "images": "https://cdn.mos.cms.futurecdn.net/opVxtLDKnSymCc3JruP8GK.jpg"
       },
       {
-        "id": "12",
+        id: 11,
         "commonName": "Aloe Vera",
         "scientificName": "Aloe vera",
         "description": "Aloe Vera is a succulent plant valued for its medicinal properties and attractive foliage. It is known for its soothing gel, which is commonly used to treat minor burns and skin irritations.",
@@ -277,7 +277,7 @@ const Data = [
         "images":"https://media.post.rvohealth.io/wp-content/uploads/2020/09/aloe-vera-732x549-thumbnail.jpg"
       },
       {
-        "id": "13",
+        id: 12,
         "commonName": "Jade Plant",
         "scientificName": "Crassula ovata",
         "description": "The Jade Plant, also known as the Money Plant or Friendship Tree, is a popular succulent valued for its attractive and resilient nature. It is believed to bring good luck and prosperity.",
@@ -300,7 +300,7 @@ const Data = [
         "images": "https://m.media-amazon.com/images/I/51fehIGF48L._AC_UF1000,1000_QL80_.jpg"
       },
       {
-        "id": "14",
+        id: 13,
         "commonName": "Begonia",
         "scientificName": "Begonia",
         "description": "Begonias are a diverse group of flowering plants valued for their colorful flowers and attractive foliage. They come in various forms, including tuberous, fibrous, and rhizomatous, and are popular as both indoor and outdoor plants.",
@@ -323,7 +323,7 @@ const Data = [
         "images": "https://naturerabbit.in/wp-content/uploads/2018/11/Nature-Rabbit-Begonia-Red-Plant-1.jpg"
       },
       {
-        "id": "15",
+        id: 14,
         "commonName": "Kalanchoe",
         "scientificName": "Kalanchoe",
         "description": "Kalanchoes are succulent plants valued for their colorful flowers and thick, fleshy leaves. They are popular as indoor and outdoor plants, especially during the winter months when they produce vibrant blooms.",
@@ -346,7 +346,7 @@ const Data = [
         "images": "https://rukminim2.flixcart.com/image/850/1000/kwv0djk0/plant-sapling/u/t/f/yes-annual-yes-kalanchoe-plant-indian-flower-1-pagoda-point-original-imag9gdafaytz7gf.jpeg?q=90&crop=false"
       },
       {
-        "id": "16",
+        id: 15,
         "commonName": "Bromeliad",
         "scientificName": "Bromeliaceae",
         "description": "Bromeliads are a diverse family of tropical plants valued for their vibrant and long-lasting flowers, as well as their striking foliage. They are popular as indoor and outdoor ornamental plants and are relatively easy to care for.",
@@ -369,7 +369,7 @@ const Data = [
         "images": "https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1635386596/vendor/2864/catalog/product/2/0/20210824113629_file_6125827d60dad_612582ef2afae._6179a27159724.jpg"
       },
       {
-        "id": "17",
+        id: 16,
         "commonName": "Gerbera Daisy",
         "scientificName": "Gerbera jamesonii",
         "description": "Gerbera Daisies are cheerful and colorful flowering plants valued for their large, daisy-like flowers that come in various vibrant hues. They are popular as indoor and outdoor plants and are commonly used in floral arrangements.",
@@ -392,7 +392,7 @@ const Data = [
         "images": "https://nurserylive.com/cdn/shop/products/nurserylive-plants-gerbera-red-plant-16968877113484.jpg?v=1634220246"
       },
       {
-        "id": "18",
+        id: 17,
         "commonName": "Cyclamen",
         "scientificName": "Cyclamen",
         "description": "Cyclamen is a charming flowering plant known for its uniquely shaped flowers and marbledfoliage. It blooms in the winter months and is popular as an indoor plant for adding color to homes during the colder seasons.",
