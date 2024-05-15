@@ -21,7 +21,7 @@ const Data = [
           "pestsAndDiseases": "Susceptible to aphids, thrips, and powdery mildew"
         },
         "type": "Outdoor",
-        "images": "https://pardhuherbals.com/wp-content/uploads/2022/10/Rose-Plant.jpg"
+        "images": "https://png.pngtree.com/png-clipart/20240129/original/pngtree-rose-flower-growing-in-pot-png-image_14177571.png"
       },
       {
         "id":1,
@@ -44,7 +44,7 @@ const Data = [
           "pestsAndDiseases": "Resistant to most pests and diseases, but can be affected by spider mites and aphids"
         },
         "type": "Outdoor",
-        "images": "https://cdn.britannica.com/76/118076-050-756CD4F5/French-marigold.jpg"
+        "images": "https://www.pngall.com/wp-content/uploads/13/Marigold-PNG-Images.png"
       },
       {
         "id": 2,
@@ -67,7 +67,7 @@ const Data = [
           "pestsAndDiseases": "Generally resistant to pests and diseases, but can be affected by aphids, caterpillars, and fungal diseases"
         },
         "type": "Outdoor",
-        "images": "https://hips.hearstapps.com/hmg-prod/images/sunforest-mix-sunflower-types-1586794598.jpg"
+        "images": "https://atlas-content-cdn.pixelsquid.com/stock-images/sunflower-MNAkl9D-600.jpg"
       },
       {
         "id": 3,

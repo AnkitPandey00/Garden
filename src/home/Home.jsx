@@ -1,240 +1,132 @@
-// import React, { useEffect, useState } from "react";
-//import { Link } from "react-router-dom";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Home.css";
-// import Data from "../topData/Data";
-// import { toast } from "react-toastify";
-import {p3} from '../assest/';
-// import Sign from "../SignIn/Sign";
+import { p1, p2, p3, p4, p5, p10, p16, p17, p18 } from "../assest/";
 
 const Home = () => {
-  //!---------------Hooks-----------------
-  // const [data, setdata] = useState([]);
-  // const navigate = useNavigate();
-  //!---------SetHooks-----------
-
-  // useEffect(() => {
-  //   setdata(Data);
-  // }, []);
-
-  //! --------------------------
-  // var settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 1500,
-  // };
-
-
-  // const notifyB = () => {
-  //   toast.success("Plant added to your collection");
-  // }
-  // const notifyA = () => {
-  //   toast.error("Plant is already in your collection");
-  // }
-
-  // const handleClickAdd = (plant) => {
-  //   const currentData = JSON.parse(localStorage.getItem('userPlantAdded')) || [];
-  //   if (currentData[plant.id]) {
-  //     notifyA();
-  //     return;
-  //   }
-  //   const updatedData = { ...currentData, [plant.id]: plant };
-  //   localStorage.setItem('userPlantAdded', JSON.stringify(updatedData));
-  //   notifyB();
-  //   navigate('/adminpage/myplant')
-  // };
-
   return (
-    <div className='w-full bg-white py-24 '>
-    <div className='md:max-w-[1280px] m-auto grid gap-y-450px md:grid-cols-2 max-w-[600px]  px-4 md:px-0'>
-        
-        <div className='flex flex-col justify-space-between gap-4'>
-        
-            <p className='py-2 text-2xl text-[#20B486] font-medium'>GREENIFY YOUR LIFE</p>
-            <h1 className='md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold'>Cultivate <span className='text-[#20B486]'>Dreams.</span><br/>
-            Thrive with <span className='text-[#20B486]'>Nature.</span><br />
-            Blossom Your <span className='text-[#20B486]'>Garden.</span>
+    <>
+      <div className="w-full bg-white py-24 ">
+        <div className="md:max-w-[1280px] m-auto grid gap-y-450px md:grid-cols-2 max-w-[600px]  px-4 md:px-0">
+          <div className="flex flex-col justify-space-between gap-4">
+            <p className="py-2 text-2xl text-[#20B486] font-medium">
+              GREENIFY YOUR LIFE
+            </p>
+            <h1 className="md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold">
+              Cultivate <span className="text-[#20B486]">Dreams.</span>
+              <br />
+              Thrive with <span className="text-[#20B486]">Nature.</span>
+              <br />
+              Blossom Your <span className="text-[#20B486]">Garden.</span>
             </h1>
-            <p className='py-2 text-lg text-gray-600'>Let us guide you through every step of your gardening journey, from planting the first seed to reaping a harvest of success.</p>
-            
-            <button className='bg-[#20B486] border max-w-[170px] p-4 shadow-2xl rounded-md  text-white text-2xl hover:bg-[#20b43c] transition-colors duration-300'>
-            <NavLink to="/signin">Get Started</NavLink>
-                </button>
+            <p className="py-2 text-lg text-gray-600">
+              Let us guide you through every step of your gardening journey,
+              from planting the first seed to reaping a harvest of success.
+            </p>
+
+            <button className="bg-[#20B486] border max-w-[170px] p-4 shadow-2xl rounded-md  text-white text-2xl hover:bg-[#20b43c] transition-colors duration-300">
+              <NavLink to="/signin">Get Started</NavLink>
+            </button>
+          </div>
+          <img
+            src={p3}
+            alt="img"
+            className="md:order-last order-first h-[500px] md:h-[600px] md:ml-[150px]"
+          />
         </div>
-        
-        <img  src={p3} alt="" className="md:order-last order-first h-[500px] md:h-[600px] md:ml-[150px]" />
-    </div>
-</div>
-
-  //   //! Header Image Section
-  //   <div className="container">
-  //     <div className="header">
-  //       <img src={garder} alt="description" className="garden" />
-  //     </div>
-  //     <h1 className="heading_01">Our Top Plant</h1>
-  //     <div className="top_plant_conat">
-  //       <div className="top_plant_conat_2">
-  //         <Slider {...settings}>
-  //           {data.map((ele, id) => {
-  //             return (
-  //               <div className="top_plant_card">
-  //                 <div className="top_plant_img">
-  //                   <img src={ele.images} alt="" className="img_01"></img>
-  //                 </div>
-  //                 <div className="top_plant_card_01">
-  //                   <p className="top_plant_title">{ele.commonName}</p>
-  //                   <p>{ele.description.split(' ').slice(0, 20).join(' ')}</p>
-  //                     <div >
-  //                     <button
-  //                     className="btn-01"
-  //                     onClick={() =>
-  //                       navigate(/pagenavigation/${id}, {
-  //                         state: { plant: ele },
-  //                       })
-  //                     }
-  //                   >
-  //                     View More
-  //                   </button>
-  //                   {/* <button  onClick{handleClickedAdd}) style={{marginLeft:"10px"}}  className="btn-01">+</button> */}
-  //                   <button
-  //                     style={{marginLeft:"10px"}}
-  //                     className="btn-01"
-  //                     onClick={() => handleClickAdd(ele)}
-  //                   >
-  //                    +
-  //                   </button>
-  //                     </div>
-  //                 </div>
-  //               </div>
-  //             );
-  //           })}
-  //         </Slider>
-  //       </div>
-  //     </div>
-  //     <h1 className="heading_02">See Our Services</h1>
-  //     <div className="service_container">
-  //     <div className="services_conatiner_2">
-
-  //     <div className="our_services">
-  //     <div className="our_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_02"></img>
-  //     </div>
-  
-  //     <div className="our_serivces_01">
-  //       <p className="our_services_title">Database-Rich</p>
-  //       <p>Access an extensive plant database with detailed care instructions and growing tips.</p>
-  //     </div>
-  //     </div>  
-   
-  //     <div className="our_services">
-  //     <div className="our_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_02"></img>
-  //     </div>
-  //     <div className="our_serivces_01">
-  //       <p className="our_services_title">Community</p>
-  //       <p>Connect with fellow gardening enthusiasts to share experiences and insights.</p>
-  //     </div>
-  //     </div>  
-
-  //     <div className="our_services">
-  //     <div className="our_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_02"></img>
-  //     </div>
-  //     <div className="our_serivces_01">
-  //       <p className="our_services_title">e-Garden</p>
-  //       <p>Easily add plants to your garden and set personalized care reminders.</p>
-  //     </div>
-  //     </div>  
-
-  //       </div>
-  //     </div>
-
-  // <h1 className="heading_03">What Customer Says<br/>About Our services</h1>
-
-
-  //  <div className="customer_revi">
-  //   <div className="customer_revi_2">
-
-  //   <div className="customer_services">
-  //     <div className="customer_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_03"></img>
-  //     </div>
-  
-  //     <div className="customer_serivces_01">
-  //       <p className="customer_services_title">Kwana Maphaka</p>
-  //       <p>This app is a game-changer! I love having all the plant care info in one place.</p>
-  //     </div>
-  //     </div>  
-
-  //     <div className="customer_services">
-  //     <div className="customer_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_03"></img>
-  //     </div>
-  
-  //     <div className="customer_serivces_01">
-  //       <p className="customer_services_title">Himanshu Raj</p>
-  //       <p>Connecting with other plant enthusiasts on this platform has been so rewarding!</p>
-  //     </div>
-  //     </div>  
-
-  //     <div className="customer_services">
-  //     <div className="customer_services_img">
-  //       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AJfMfQaQkBBpk5kja9sOaq9CVVKrrVeluQ&usqp=CAU" alt="" className="img_03"></img>
-  //     </div>
-  
-  //     <div className="customer_serivces_01">
-  //       <p className="customer_services_title">David wiese</p>
-  //       <p className="customer_services_para">The reminder feature has made plant care a breeze—I'm seeing better results already!</p>
-  //     </div>
-  //     </div>  
-      
-  //   </div>
-  //  </div>
-     
-  //  <footer className="footer">
-       
-  //       <div className="main">
-  //         <div>
-  //           <h1>Garden Guru</h1>
-  //           <p>The Best and eaisest way to<br/> plant a tree</p>
-  //         </div>
-  //         <div>
-  //           <h2>Usefull Link</h2>
-  //           <ul>
-  //             <li>About Us</li>
-  //             <li>Events</li>
-  //             <li>Blogs</li>
-  //             <li>Faq</li>
-  //           </ul>
-  //         </div>
-  //         <div>
-  //           <h2>Main Menu</h2>
-  //           <ul>
-  //             <li>Home</li>
-  //             <li>Plant Indoor</li>
-  //             <li>Plant Outdoor</li>
-  //             <li>Menus</li>
-  //             <li>Sign up</li>
-  //           </ul>
-  //         </div>
-  //         <div>
-  //           <h2>Contact Us</h2>
-  //            <p>Ankitpandey62042@gmail.com</p>
-  //            <p>+91 6204265733</p>
-  //            <p>Chitkara university H.P</p>
-  //         </div>
-          
-  //       </div>
-  //       <p>© 2024 Garden Guru. All rights reserved.</p>
-  //     </footer> 
-  //   </div>
+      </div>
+      <div className="w-full bg-[#f9f5f1] py-2 ">
+        <div className=" md:max-w-[1280px] m-auto grid gap-y-450px md:grid-cols-2 max-w-[600px] px-4 md:px-0">
+          <div className="flex flex-col justify-center gap-4">
+            <div className="bg-white text-center rounded-3xl shadow p-4 inline-block ">
+              <h1 className="md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold">
+                Discover Botanical Wonders!
+              </h1>
+              <p className="py-2 text-lg text-gray-600">
+                Embark on a botanical adventure with our extensive database.
+                Explore a diverse collection of plants, from rare orchids to
+                resilient succulents. Whether you're seeking gardening
+                inspiration or in-depth plant care guides, you'll find
+                everything you need to cultivate your green paradise right here.
+              </p>
+            </div>
+          </div>
+          <img
+            src={p16}
+            alt="img"
+            className="order-last md:order-first h-[500px] md:h-[600px]"
+          />
+        </div>
+      </div>
+      <div className="w-full bg-[#f9f5f1] py-2 ">
+        <div className="md:max-w-[1280px] m-auto grid gap-y-450px md:grid-cols-2 max-w-[600px] px-4 md:px-0">
+          <div className="flex flex-col justify-center gap-4">
+            <div className="bg-white text-center rounded-3xl shadow p-4 inline-block ">
+              <h1 className="md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold">
+                Protect Your Plants!
+              </h1>
+              <p className="py-2 text-lg text-gray-600">
+                Empower yourself with our advanced plant disease recognition
+                tool. Quickly identify and combat diseases, pests, and other
+                threats to keep your garden thriving. With intuitive features
+                and expert insights, you'll be equipped to safeguard your plants
+                and ensure they reach their full potential.
+              </p>
+            </div>
+          </div>
+          <img
+            src={p17}
+            alt="img"
+            className="order-last h-[500px] md:h-[600px]"
+          />
+        </div>
+      </div>
+      <div className="w-full bg-[#f9f5f1] py-2 ">
+        <div className="md:max-w-[1280px] m-auto grid gap-y-450px md:grid-cols-2 max-w-[600px] px-4 md:px-0">
+          <div className="flex flex-col justify-center gap-4">
+            <div className="bg-white text-center rounded-3xl shadow p-4 inline-block ">
+              <h1 className="md:leading-[72px] py-2 md:text-6xl text-5xl font-semibold">
+                Grow Together!
+              </h1>
+              <p className="py-2 text-lg text-gray-600">
+                Join a vibrant global community of plant enthusiasts! Share your
+                gardening triumphs, seek advice, and connect with fellow green
+                thumbs. Whether you're a seasoned gardener or just starting your
+                journey, our community provides a supportive environment where
+                you can learn, share, and flourish together.
+              </p>
+            </div>
+          </div>
+          <img
+            src={p18}
+            alt="img"
+            className="order-last md:order-first h-[500px] md:h-[600px] "
+          />
+        </div>
+      </div>
+      <div className="w-full bg-[#E9F8F3B2] py-2">
+        <div className="md:max-w-[1480px] m-auto max-w-[600px] py-10 px-4 md:px-0">
+          <h1 className="text-center text-2xl font-bold text-[#536E96]">
+            Trusted by over 25,000 Peoples around the world.
+          </h1>
+          <p className="text-center  text-[#536E96] text-xl">
+            Join a Thriving Community of Plant Enthusiasts Who Rely on Our Rich
+            Library to Care for Their Green Buddies!
+          </p>
+          <div className="flex justify-center py-8 md:gap-8 ">
+            <div className="grid md:grid-cols-5 grid-cols-2 gap-2">
+              <img src={p1} alt="img" class="hidden md:block" />
+              <img src={p2} alt="img" class="hidden md:block" />
+              <img src={p4} alt="img" />
+              <img src={p5} alt="img" class="hidden md:block" />
+              <img src={p10} alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Home;
+export default Home;

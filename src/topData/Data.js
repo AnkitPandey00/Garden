@@ -135,7 +135,7 @@ const Data = [
           "pestsAndDiseases": "Susceptible to aphids, thrips, and powdery mildew"
         },
         "type": "Outdoor",
-        "images": "https://imgs.search.brave.com/K0HYWdpkUBUnUpLUWwRvfHUPihLaiz9idLAy1WsCHf8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE0/Mzk1MzI2L3Bob3Rv/L3llbGxvdy1yb3Nl/LWZsb3dlci1pbi1i/bG9vbS1vbi1yb3Nl/LXBsYW50LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1OaTZI/VDJXd190Z0dNcjYy/YkZmalItTTl5dUht/MDNVNS1EX3lqVHBJ/M3lJPQ"
+        "images": "https://pardhuherbals.com/wp-content/uploads/2022/10/Rose-Plant.jpg"
       },
       {
         "id":6,

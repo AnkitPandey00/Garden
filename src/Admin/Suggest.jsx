@@ -1,59 +1,62 @@
-import React from 'react'
-import './Admin.css'
+
+import React from 'react';
 import suggestData from '../topData/suggest';
-import { useNavigate } from "react-router-dom";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Suggest = () => {
-  const data = JSON.parse(localStorage.getItem("Garden")).savedUser;
-  const filteredData = suggestData.filter(ele => ele.state.toLowerCase() === data.state.toLowerCase());
+  const data = JSON.parse(localStorage.getItem('Garden')).savedUser;
+  const filteredData = suggestData.filter(
+    (ele) => ele.state.toLowerCase() === data.state.toLowerCase()
+  );
   const navigate = useNavigate();
-  var settings = {
-    dots: true,
-    infinite: true,
+  const sliderSettings = {
+    dots: false,
+    infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    slidesToShow: 3, // Display two slides vertically
+    slidesToScroll: 1, // Scroll one slide at a time
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
- <div className='suggest_main'>
-        <div className='suggest'>
-        <Slider {...settings}>
-            {filteredData.map((ele, id) => {
-              return (
-                <div className="top_plant_card top_suggest">
-                  <div className="top_plant_img suggest_img">
-                    <img src={ele.images} alt="" className="img_01"></img>
-                  </div>
-                  <div className="top_plant_card_01">
-                    <p style={{color:""}} className="top_plant_title">{ele.commonName}</p>
-                    <p style={{color:"white"}}>{ele.description.split(' ').slice(0, 20).join(' ')}</p>
-                      <div >
-                      <button
-                      style={{color:"white"}}
-                      className="btn-04"
-                      onClick={() =>
-                        navigate(`/pagenavigation/${id}`, {
-                          state: { plant: ele },
-                        })
-                      }
-                    >
-                      View More
-                    </button>
-                      </div>
-                  </div>
-                </div>
-              );
-            })}
-             </Slider>
-        </div>
+    <div className="suggest_main p-4">
+      <h1 className="text-3xl font-bold text-center pb-2 ">Top Picks</h1>
+      <div className="suggest">
+        <Slider {...sliderSettings} className='custom-slide'>
+          {filteredData.map((ele, id) => (
+            <div key={id} className=" rounded-lg overflow-hidden shadow-md p-4">
+              <div className="flex items-center mb-4">
+                <img src={ele.images} alt={ele.commonName} className="w-20 h-20 object-cover rounded-full mr-4" />
+                <p className="text-lg font-medium">{ele.commonName}</p>
+              </div>
+              <div>
+                <button
+                  className="btn-04 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  onClick={() =>
+                    navigate(`/pagenavigation/${id}`, {
+                      state: { plant: ele },
+                    })
+                  }
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Suggest
+export default Suggest;

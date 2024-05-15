@@ -1,65 +1,75 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import './Admin.css';
 import { toast } from "react-toastify";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./slider.css";
+
 const MyPlant = () => {
-  // Define state to manage the plants
   const [plants, setPlants] = useState([]);
 
   const notifyB = () => {
     toast.success("You have removed your collection");
-  }
-  // Fetch data from localStorage on component mount
+  };
+
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("userPlantAdded")) || {};
     setPlants(Object.values(data));
   }, []);
 
-  // Function to remove a plant by its id
   const handleRemove = (id) => {
-    // Filter out the plant with the given id
-    const updatedPlants = plants.filter(plant => plant.id !== id);
-    // Update localStorage with the updated plant list
-    localStorage.setItem('userPlantAdded', JSON.stringify(updatedPlants));
-    // Update state to reflect the removal
+    const updatedPlants = plants.filter((plant) => plant.id !== id);
+    localStorage.setItem("userPlantAdded", JSON.stringify(updatedPlants));
     setPlants(updatedPlants);
     notifyB();
   };
 
   const navigate = useNavigate();
 
+  const sliderSettings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3, // Display two slides vertically
+    slidesToScroll: 1, // Scroll one slide at a time
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
-      <h1 className="myplant_h1">My Collection</h1>
-      <div className="myplant_main">
-        {plants.length > 0 ? (
-          plants.map((plant, index) => (
-            <div key={plant.id} className="main">
-              <div className="contai">
-                <div className="front">
-                  <img
-                    className="myplant_img"
-                    src={plant.images}
-                    alt={plant.commonName}
-                  />
-                </div>
-                <div className="back">
-                  <div className="myplant_info">
-                    <h2 className="myplant_h2">{plant.commonName}</h2>
-                    <p className="myplant_p">{plant.description}</p>
-                  </div>
+      <h1 className="text-3xl font-bold text-center mt-10 md:mt-0 ">My Collection</h1>
+      {plants.length > 0 ? (
+        <Slider {...sliderSettings} className="custom-slide">
+          {plants.map((plant, index) => (
+            <div key={plant.id} className="plant-card rounded-lg shadow-md overflow-hidden">
+              <div className="flex justify-center items-center mb-2">
+                <img
+                  className="w-[150px] h-[180px] object-cover"
+                  src={plant.images}
+                  alt={plant.commonName}
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-lg font-medium mb-2">{plant.commonName}</h2>
+                <div className="flex justify-between items-center">
                   <button
-                    className="myplant_btn"
+                    className="bg-green-500 text-white font-medium py-2 px-4 rounded-md focus:outline-none hover:bg-green-700 transition duration-300"
                     onClick={() =>
-                      navigate(`/pagenavigation/${index}`, {
-                        state: { plant },
-                      })
+                      navigate(`/pagenavigation/${index}`, { state: { plant } })
                     }
                   >
                     View Details
                   </button>
                   <button
-                    className="myplant_btn_remove"
+                    className="bg-red-500 text-white font-medium py-2 px-4 rounded-md focus:outline-none hover:bg-red-700 transition duration-300"
                     onClick={() => handleRemove(plant.id)}
                   >
                     Remove
@@ -67,11 +77,13 @@ const MyPlant = () => {
                 </div>
               </div>
             </div>
-          ))
-        ) : (
-          <p style={{ fontSize: "50px", color: "#fff", marginTop: "50px" }}>Nothing In Your Collection</p>
-        )}
-      </div>
+          ))}
+        </Slider>
+      ) : (
+        <p className="text-center text-white text-3xl font-bold mt-16">
+          Nothing In Your Collection
+        </p>
+      )}
     </>
   );
 };

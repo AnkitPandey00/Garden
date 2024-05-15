@@ -20,7 +20,7 @@ const Data = [
           "toxicity": "Mildly toxic if ingested, can cause irritation",
           "pestsAndDiseases": "Resistant to pests but susceptible to root rot if overwatered"
         },
-        "images":'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPH4_GB7iG_h61yON_K8RZ8XVSda731WEnzgEf84PIIzkZDD6_',
+        "images":'https://static.vecteezy.com/system/resources/previews/037/501/544/original/ai-generated-peace-lily-spathiphyllum-wallisii-flower-isolated-on-transparent-background-png.png',
         "type": "Indoor",
         
       },
@@ -45,7 +45,7 @@ const Data = [
           "pestsAndDiseases": "Susceptible to aphids, spider mites, and powdery mildew"
         },
         "type": "Indoor",
-        "images":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NoQXSViS0UfXpbGScTRekcWP0jbkXmkCK2ljNEiLpPTrf0SyeobkQ3IAOk-pWgm_ZDA&usqp=CAU',
+        "images":'https://png.pngtree.com/png-clipart/20230916/original/pngtree-the-flower-pot-sticker-is-purple-with-purple-flowers-clipart-vector-png-image_12251441.png',
       },
       {
         id: 2,
@@ -68,7 +68,7 @@ const Data = [
           "pestsAndDiseases": "May be susceptible to aphids, scale insects, and fungal diseases if not properly cared for"
         },
         "type": "Indoor",
-        "images":'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllKzu2rsSpbOIZdGwZvvRgezqtVCVsLBj1xBlJCmy0qjII8Nj',
+        "images":'https://static.vecteezy.com/system/resources/previews/027/254/707/original/white-orchid-plant-in-a-white-pot-png.png',
       },
       {
         id: 3,
