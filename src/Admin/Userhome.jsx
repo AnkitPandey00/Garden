@@ -7,7 +7,7 @@ const Userhome = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:8080/getUser?search=${searchTerm}`, {
+    fetch(`/getUser?search=${searchTerm}`, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -22,7 +22,7 @@ const Userhome = () => {
 
   const deleteUser = (id, name) => {
     if (window.confirm(`Are you sure you want to delete ${name}`)) {
-      fetch(`http://localhost:8080/deleteUser`, {
+      fetch(`/deleteUser`, {
         method: "POST",
         crossDomain: true,
         headers: {

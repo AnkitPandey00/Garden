@@ -33,7 +33,7 @@ const CreateCom = () => {
 
   useEffect(() => {
     if (url) {
-      fetch("http://localhost:8080/addpost", {
+      fetch("/addpost", {
         method: "post",
         headers: {
           "Content-type": "application/json",

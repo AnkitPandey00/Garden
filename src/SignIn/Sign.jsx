@@ -17,7 +17,7 @@ const SignIn = (props) => {
     navigate("/");
   };
   const postData = (event) => {
-    fetch("http://localhost:8080/signin", {
+    fetch("/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

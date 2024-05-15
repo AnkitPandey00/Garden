@@ -16,7 +16,7 @@ const CreatePost = () => {
   };
 
   function postData() {
-    fetch("http://localhost:8080/createComminty", {
+    fetch("/createComminty", {
       method: "post",
       headers: {
         "Content-type": "application/json",

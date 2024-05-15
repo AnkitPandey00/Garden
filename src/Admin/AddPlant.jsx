@@ -39,7 +39,7 @@ const AddPlant = () => {
   };
 
   const handleSubmit = () => {
-    fetch(`http://localhost:8080/${type}`, {
+    fetch(`/${type}`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

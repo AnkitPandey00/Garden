@@ -31,7 +31,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Suggest from "./Suggest";
 import Profile from "./Profile";
 import MyPlant from "./MyPlant";
-// import Home from "../home/Home";
+ import AddPlant from "./AddPlant"
 import Userhome from "./Userhome";
 const AdminRoutes = () => {
   return (
@@ -40,9 +40,8 @@ const AdminRoutes = () => {
       <Route path="suggest" element={<Suggest />} />
       <Route path="profile" element={<Profile />} />
       <Route path="myplant" element={<MyPlant />} />
-      {/* <Route path="*" element={<Navigate to="suggest" replace />} /> */}
       <Route path="userhome" element={<Userhome />} />
-      {/* <Route path="/" element={<Home />} /> */}
+      <Route path="addplant" element={<AddPlant/>}/>
     </Routes>
   );
 };
